@@ -16,4 +16,4 @@
     }
 ```
 
-<img src="https://https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph01.gif" width="600px"/>  
+<img src="https://https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph01.jpg" width="600px"/>  
