@@ -12,37 +12,33 @@ public class Graph : MonoBehaviour
     private void Awake()
     {
         points = new Transform[solution * solution];
-        Vector3 newLocalPosition = Vector3.zero;
-        float step = 2 / (float)solution; // 这个是固定的，没必要每次都在循环里面算
-
-        float d = -1;
-        for (int i = 0,a = 0; i < points.Length; i++,a++)
+        float step = 2 / (float)solution;
+        for (int i = 0; i < points.Length; i++)
         {
-            if (a == solution)
-            {
-                a = 0;
-                d += step;
-            }
-            Transform p = points[i] = Instantiate(point).transform; // 最好不要每次都用 points[i]，拿一个变量存起来
-            p.transform.SetParent(this.transform, false);
-            newLocalPosition.x = step * (a + 0.5f) - 1f;
-            newLocalPosition.z = d;
-            p.transform.localPosition = newLocalPosition;
-            p.transform.localScale = Vector3.one * step;
+            Transform p = points[i] = Instantiate(point).transform;
+            p.transform.SetParent(transform, false);
+            p.transform.localScale = Vector3.one * step ;
         }
     }
 
     private void Update()
     {
         FunctionLibrary.Function f = FunctionLibrary.GetFunction(functionName);
-        Vector3 newLocalPosition;
+        float step = 2 / (float)solution;
+        Vector3 newLocalPosition = Vector3.zero ;
+        newLocalPosition.z = 0.5f * step - 1f;
         float time = Time.time;
-        for (int i = 0; i < points.Length; i++)
+        for (int i = 0,a = 0,b = 0; i < points.Length; i++, a++)
         {
+            if(a == solution)
+            {
+                a = 0;
+                b++;
+                newLocalPosition.z = (b + 0.5f) * step - 1f;
+            }
             Transform t = points[i].transform;
-            newLocalPosition = t.localPosition;
-            newLocalPosition.y = f(t.localPosition.x, t.localPosition.z, time); 
-            t.localPosition = newLocalPosition;
+            newLocalPosition.x = (a + 0.5f) * step - 1f;
+            t.localPosition = f(newLocalPosition.x, newLocalPosition.z, time);
         }
     }
 
