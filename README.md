@@ -16,7 +16,7 @@
     }
 ```
 
-<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph01.jpg" width="600px"/>  
+<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph01.jpg" width="300px"/>  
 
 ```cs
     public static Vector3 Sphere(float u, float v, float t)
@@ -30,7 +30,7 @@
     }
 ```
 
-<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph02.gif" width="600px"/>  
+<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph02.gif" width="300px"/>  
 
 ```cs
     public static Vector3 Sphere(float u, float v, float t)
@@ -43,7 +43,7 @@
         return p;
     }
 ```
-<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph03.jpg" width="600px"/>  
+<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph03.jpg" width="300px"/>  
 
 
 ```cs
@@ -59,7 +59,7 @@
         return p;
     }
 ```
-<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph04.gif" width="600px"/>  
+<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph04.gif" width="300px"/>  
 
 
 ```cs
@@ -75,6 +75,6 @@
     }
 ```
 上述形式中的 8，对应有几个 “角角”，然后 `* 0.1f + 0.9f`，其实是把 [-1,1] 变成 [0,8,1.0]，当然你也可以写成 `* 0.5f + 0.5f` ，那样 “胡桃” 会更明显点。如下图所示（其实应该有 16 个角角，但是 0.5 让负值消失了）：
-<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph05.jpg" width="600px"/>  
+<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph05.jpg" width="300px"/>  
 下面的是 `* 0.8f + 0.2f`，范围是 [-0.6,1.0]，短的那 8 个是 [-0.6,0],长的是 [0,1]。  
-<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph06.jpg" width="600px"/>  
+<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph06.jpg" width="300px"/>  

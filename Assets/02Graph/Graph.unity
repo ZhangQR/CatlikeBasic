@@ -378,7 +378,7 @@ MonoBehaviour:
   point: {fileID: 5836833352963594509, guid: c1e4e297a137971449f1697c03d1da03, type: 3}
   solution: 100
   speed: 1.2
-  functionName: 3
+  functionName: 4
 --- !u!1 &1604684284
 GameObject:
   m_ObjectHideFlags: 0
