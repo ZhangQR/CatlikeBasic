@@ -4,13 +4,14 @@ public static class FunctionLibrary
 {
     public delegate Vector3 Function(float u, float v, float t);
 
-    static Function[] functions = { Wave, MutiWave , Ripple , Sphere };
+    static Function[] functions = { Wave, MutiWave , Ripple , Sphere, Tour };
     public enum FunctionName
     {
         Wave,
         MutiWave,
         Ripple,
-        Sphere
+        Sphere,
+        Tour
     }
     public static Vector3 Wave(float u,float v,float t)
     {
@@ -46,11 +47,24 @@ public static class FunctionLibrary
 
     public static Vector3 Sphere(float u, float v, float t)
     {
-        Vector3 p = Vector3.zero;
-        float r = Cos(v * PI * 0.5f);
-        p.x = r*Sin(PI * u);
-        p.y = Sin(PI * 0.5f * v);
-        p.z = r*Cos(PI * u);
+        float r = 0.9f + 0.1f * Sin(PI * (6f * u + 5 * v+ t));
+        float s = r * Cos(0.5f * PI * v);
+        Vector3 p;
+        p.x = s * Sin(PI * u);
+        p.y = r * Sin(0.5f * PI * v);
+        p.z = s * Cos(PI * u);
+        return p;
+    }
+
+    public static Vector3 Tour(float u, float v, float t)
+    {
+        float r1 = 0.7f + 0.1f * Sin(PI * (6f * u + 0.5f * t));
+        float r2 = 0.15f + 0.05f * Sin(PI * (8f * u + 4f * v + 2f * t));
+        float s = r1 + r2 * Cos(PI * v);
+        Vector3 p;
+        p.x = s * Sin(PI * u);
+        p.y = r2 * Sin(PI * v);
+        p.z = s * Cos(PI * u);
         return p;
     }
 
