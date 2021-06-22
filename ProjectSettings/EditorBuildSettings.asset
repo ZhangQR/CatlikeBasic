@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/02Graph/Graph.unity
+    guid: b6daf9a23b9b2c743bf1abc6a2fc552e
   m_configObjects: {}
