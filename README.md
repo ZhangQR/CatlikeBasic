@@ -80,4 +80,4 @@
 <img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph06.jpg" width="300px"/>  
 
 阶段成品：  
-<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph07.gif" width="700px"/>  
+<img src="https://gitee.com/zhangqrr/CatlikeBasic/raw/master/ReadmeImages/Graph07.gif" width="700px"/>  
