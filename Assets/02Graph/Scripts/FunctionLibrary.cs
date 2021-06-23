@@ -11,7 +11,8 @@ public static class FunctionLibrary
         MutiWave,
         Ripple,
         Sphere,
-        Tour
+        Tour,
+        Max
     }
     public static Vector3 Wave(float u,float v,float t)
     {
@@ -66,6 +67,11 @@ public static class FunctionLibrary
         p.y = r2 * Sin(PI * v);
         p.z = s * Cos(PI * u);
         return p;
+    }
+
+    public static Vector3 Morph(float u,float v,float t,Function from,Function to,float process)
+    {
+        return Vector3.LerpUnclamped(from(u, v, t), to(u, v, t), SmoothStep(0f,1f,process));
     }
 
     public static Function GetFunction(FunctionName name)

@@ -78,3 +78,6 @@
 <img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph05.jpg" width="300px"/>  
 下面的是 `* 0.8f + 0.2f`，范围是 [-0.6,1.0]，短的那 8 个是 [-0.6,0],长的是 [0,1]。  
 <img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph06.jpg" width="300px"/>  
+
+阶段成品：  
+<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph07.gif" width="700px"/>  
