@@ -1,0 +1,28 @@
+#pragma kernel WaveKernel
+
+#define PI 3.1415926
+
+RWStructuredBuffer<float3> Result;
+float Solution,Time;
+
+float3 Wave(float u,float v,float t)
+{
+    float3 p = float3(0,0,0);
+    p.x = u;
+    p.y = sin(PI * (u + v + t));
+    p.z = v;
+    return p;
+}
+
+[numthreads(8,8,1)]
+void WaveKernel (uint3 id : SV_DispatchThreadID)
+{
+    uint s = Solution/8;
+    s = 8 * s;
+    float2 uv = (id.xy + 0.5) * 2 / s - 1;
+    Result[id.x + s * id.y] = Wave(uv.x,uv.y,Time);
+}
+
+
+
+
