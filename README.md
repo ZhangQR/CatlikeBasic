@@ -80,7 +80,7 @@
 <img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph06.jpg" width="300px"/>  
 
 阶段成品：  
-<img src="https://gitee.com/zhangqrr/CatlikeBasic/raw/master/ReadmeImages/Graph07.gif" width="700px"/>  
+<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph07.gif" width="700px"/>  
 
-使用 Computer Shader，下图分辨率为 1000，可以看到依然很流畅（摩尔纹是因为屏幕分辨率不足，小窗摩尔纹就会很明显，全屏就会稍微好一点）。试想一下，如果创建 1000 * 1000 个物体，那基本上秒秒钟就要死机。  
-<img src="https://gitee.com/zhangqrr/CatlikeBasic/raw/master/ReadmeImages/Graph08.gif" width="700px"/>  
+使用 Computer Shader，下图分辨率为 500（实际上即使是 1000，也可以轻松应对），可以看到依然很流畅。试想一下，如果创建 1000 * 1000 个物体，那基本上秒秒钟就要死机。  
+<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph08.gif" width="700px"/>  

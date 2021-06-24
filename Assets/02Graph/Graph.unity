@@ -364,11 +364,11 @@ RectTransform:
   m_Father: {fileID: 662875122}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -875, y: 0}
-  m_SizeDelta: {x: 178.5392, y: 200.225}
-  m_Pivot: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 178.53918, y: 200.225}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &518014506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -625,7 +625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb168379a8003f6478489fda3086637e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  solution: 1000
+  solution: 500
   computerShader: {fileID: 7200000, guid: a99cb2636738e6c4c987217ca7882505, type: 3}
   mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
   pointMaterial: {fileID: 2100000, guid: 844303e0c1c461f4ca9aff65cd00bcb2, type: 2}
