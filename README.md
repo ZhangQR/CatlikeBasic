@@ -84,3 +84,8 @@
 
 使用 Computer Shader，下图分辨率为 500（实际上即使是 1000，也可以轻松应对），可以看到依然很流畅。试想一下，如果创建 1000 * 1000 个物体，那基本上秒秒钟就要死机。  
 <img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Graph08.gif" width="700px"/>  
+
+## 分形
+
+<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Fractal01.png" width="300px"/>  
+<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Fractal02.gif" width="700px"/>  
