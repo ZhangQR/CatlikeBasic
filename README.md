@@ -87,5 +87,5 @@
 
 ## 分形
 
-<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Fractal01.png" width="300px"/>  
-<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Fractal02.gif" width="700px"/>  
+密恐福音：  
+<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Fractal01.gif" width="700px"/>  
