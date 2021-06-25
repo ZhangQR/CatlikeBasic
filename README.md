@@ -89,3 +89,5 @@
 
 密恐福音：  
 <img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Fractal01.gif" width="700px"/>  
+实现这种效果有两种方法，一个是将 Inspector 变成一个树状结构。第二种就是像下图一样，使用二维数组来存储所有元素，并且自己计算每一帧的位置、旋转、缩放等。也就是将结构扁平化，是一种优化。  
+<img src="https://github.com/ZhangQR/CatlikeBasic/raw/master/ReadmeImages/Fractal02.jpg" width="300px"/>  
